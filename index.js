@@ -20,6 +20,7 @@
 var button = document.querySelector('#menu-button');
 var menu = document.querySelector('#menu');
 button.addEventListener('click', function (event) {
+<<<<<<< HEAD
       if (menu.style.display == "none") {
           menu.style.display = "block";
           button.innerHTML = "Hide Schedule";
@@ -229,6 +230,14 @@ button.addEventListener('click', function (event) {
       } else {
           menu.style.display = "none";
           button.innerHTML = "Show Schedule";
+=======
+      if (menu.style.display == "") {
+          menu.style.display = "none";
+          button.innerHTML = "Show Schedule";
+      } else {
+          menu.style.display = "";
+          button.innerHTML = "Hide Schedule";
+>>>>>>> 03070a14d8b7aac5bd8e12539dad269021a11bae
       }
     }
   );
