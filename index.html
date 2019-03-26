@@ -9,33 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     
-    <nav class="navbar fixed-top" style="float:none; display:inline-block; text-align:left;">
-      
-        <a class="nav-link " href="#">
-            <div class="pre-scrollable">
-          <button class="btn btn-link " type="button" data-toggle="collapse" aria-expanded="false" 
+  <nav class="navbar fixed-top" style="float:none; display:inline-block; text-align:left;">
+    <a class="nav-link " href="#">
+      <div class="pre-scrollable">
+        <button class="btn btn-link " type="button" data-toggle="collapse" aria-expanded="false" 
           aria-controls="collapseExample" data-target="#twitter" >
-            <img src="icons8-menu-48.png" width="30" height="30" alt="">
-            <div class="collapse" id="twitter">
-              <a class="twitter-timeline" href="https://twitter.com/CUNY?ref_src=twsrc%5Etfw">Tweets by CUNY</a> 
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-            </div>
-          </button>
-        </div>
-        </a>
-      
-    </nav>
+          <img src="icons8-menu-48.png" width="30" height="30" alt="">
+          <div class="collapse" id="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/CUNY?ref_src=twsrc%5Etfw" style="width:200px;">Tweets by CUNY</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          </div>
+        </button>
+      </div>
+    </a>
+  </nav>
     
       
     
     <title>Cuny Portal</title>
       <style>
+        
+        #twitter{
+          width:200px;
+        }
+        .navbar{
+          min-width:200px;
+        }
         body 
         {
           font-family:sans-serif;
           background-color: #343a40;
           text-align: center;
-          padding: 200px;
+          padding:150px;
+          z-index:-1;
         }
         .pre-scrollable{
         height: auto;
@@ -56,35 +62,43 @@
           font-family:sans-serif;
           text-align: center;
           font-size:15px;
+          
+        }
+        button{
+          text-align: center;
+          width:auto;/*affects pre scroll width*/
+          min-width: 100px;/*doesnt affect pre scroll*/
+          margin:5px;
         }
       </style>
   </head>
   <body>
-    <h1>Cuny Portal</h1>
-    <h2>a simple portal for blackboard and cuny first</h2><br>
+    <div class="container-fluid">
+      <h1>Cuny Portal</h1>
+      <h2>a simple portal for blackboard and cuny first</h2><br>
+    </div>
   
     <div class="container-fluid">
-      
-        <div class="btn-group" role="group" aria-label="First group">
+        <!-- <div class="btn-group" role="group" aria-label="First group"> -->
           <button type="button" class="btn btn-primary rounded" >
               <a href="https://bbhosted.cuny.edu/"style="text-decoration: none; color:white;">blackboard
           </button>
-        </div>
+        <!-- </div> -->
 
-        <div class="btn-group ml-2" role="group" aria-label="Second group">
+        <!-- <div class="btn-group ml-2" role="group" aria-label="Second group"> -->
           <button class="btn btn-primary rounded" type="button" >
             <a href="https://home.cunyfirst.cuny.edu/" style="text-decoration: none; color:white;">
             Cuny First</a>
           </button>
-        </div>
+        <!-- </div> -->
 
-        <div class="btn-group ml-2 " role="group" aria-label="Third group">
+        <!-- <div class="btn-group ml-2" role="group" aria-label="Third group"> -->
           <button class="btn btn-primary" type="button" data-toggle="collapse" aria-expanded="false" 
           aria-controls="collapseExample" data-target="#schedule" >Schedule
           </button>
-        </div>
+        <!-- </div> -->
   
-    </div>
+    
     
   </body>
         <br>
@@ -181,232 +195,15 @@
                     
                 </tbody>
               </table>
-          <!-- <table class="table">
-            <tr>
-              <td>Dates</td>
-              <td>Days</td>
-              <td>Events</td>
-            </tr>
-            <tr>
-              <td>August 26</td>
-              <td>Sunday</td>
-              <td>Last day for 100% tuition refund</td>
-            </tr>
-            <tr>
-              <td>August 27</td>
-              <td>Monday</td>
-              <td>Classes begin.
-                  Registration for senior citizens begins.</td>
-              </tr>
-              <tr>
-                  <td>August 27-September 2</td>
-                  <td></td>
-                  <td>Late registration period.</td>
-              </tr>
-              <tr>
-                  <td>September 2</td>
-                  <td>Sunday</td>
-                  <td>Last day to add a course.
-                      Last day to drop with a 75% refund.
-                      Financial Aid Certification Enrollment Status Date.</td>
-              </tr>
-              <tr>
-                  <td>September 3</td>
-                  <td>Monday</td>
-                  <td>College Closed. No classes scheduled.
-                      Verification of Enrollment Rosters available to faculty.</td>
-              </tr>
-              <tr>
-                  <td>September 5</td>
-                  <td>Wednesday</td>
-                  <td>Classes follow a Monday schedule.</td>
-              </tr>
-              <tr>
-                  <td>September 9</td>
-                  <td>Sunday</td>
-                  <td>Last day to drop with a 50% refund.</td>
-              </tr>
-              <tr>
-                  <td>September 10-11</td>
-                  <td>Monday-Tuesday</td>
-                  <td>No classes scheduled.</td>
-              </tr>
-              <tr>
-              <td>September 14</td>
-              <td>Friday</td>
-              <td>Early Alert Roster emailed to faculty.</td>
-              </tr>
-              <tr>
-                  <td>September 16</td>
-                  <td>Sunday</td>
-                  <td>Last day to drop with a 25% refund.
-                      Last day to drop without a grade of W.
-                      Last day to file for pass/fail option.
-                      Last day to change or declare a major/minor to be effective in the fall.
-                      FORM A census date.
-                      Verification of Enrollment Rosters due from faculty.</td>
-              </tr>
-              <tr>
-              <td>September 17</td>
-              <td>Monday</td>
-              <td>Course withdrawal period begins. A grade of W is assigned to students who
-                  officially drop a class.
-                  WN grades assigned.
-                  Last day to register for an independent study course for the fall term. </td>
-              </tr>
-              <tr>
-              <td>September 18-19</td>
-              <td>Tuesday-Wednesday</td>
-              <td>No classes scheduled.</td>
-              </tr>
-              <tr>
-              <td>September 21</td>
-              <td>Friday</td>
-              <td>Early Alert submission deadline for faculty</td>
-              </tr>
-              <tr>
-              <td>September 24</td>
-              <td>Monday</td>
-              <td>Early Alert notification sent to students.</td>
-              </tr>
-              <tr>
-              <td>September 26</td>
-              <td>Wednesday</td>
-              <td>WA grades assigned for immunization non-compliance.</td>
-              </tr>
-              <tr>
-              <td>October 1</td>
-              <td>Monday</td>
-              <td>Last day to file for January 2019 graduation.</td>
-              </tr>
-              <tr>
-              <td>October 8</td>
-              <td>Monday</td>
-              <td>College is closed. No classes scheduled.</td>
-              </tr>
-              <tr>
-              <td>October 9</td>
-              <td>Tuesday</td>
-              <td>Mid-Semester Alert roster emailed to faculty.</td>
-              </tr>
-              <tr>
-              <td>October 15</td>
-              <td>Monday</td>
-              <td>Last day to withdraw from first 7 ½ week courses.</td>
-              </tr>
-              <tr>
-              <td>October 16</td>
-              <td>Tuesday</td>
-              <td>Mid-Semester Alert submission deadline for faculty.</td>
-              </tr>
-              <tr>
-              <td>October 18</td>
-              <td>Thursday</td>
-              <td>Mid-Semester Alert notification sent to students.</td>
-              </tr>
-              <tr>
-              <td>November 1</td>
-              <td>Thursday</td>
-              <td>Last day to appeal grades other than WU or FIN from Spring 2018 semester. Please refer
-                  to Undergraduate Catalog for details and procedures.</td>
-              </tr>
-              <tr>
-              <td>November 6</td>
-              <td>Tuesday</td>
-              <td>Course withdrawal period ends; Last day to drop with the grade of "W.”</td>
-              </tr>
-              <tr>
-              <td>November 22-25</td>
-              <td>Thursday-Sunday</td>
-              <td>College is closed. No classes scheduled</td>
-              </tr>
-              <tr>
-              <td>December 3</td>
-              <td>Monday</td>
-              <td>Last day to withdraw from second 7 ½ week classes.</td>
-              </tr>
-              <tr>
-              <td>December 12</td>
-              <td>Wednesday</td>
-              <td>Last day of regular classes.
-                  Last day to remove incomplete grades from the Spring and Summer 2018 semesters.</td>
-              </tr>
-              <tr>
-              <td>December 13-21</td>
-              <td>Thursday-Friday</td>
-              <td>Final examinations.</td>
-              </tr>
-              <tr>
-              <td>December 13</td>
-              <td>Thursday</td>
-              <td>Departmental Exams – Biology/Computer Science</td>
-              </tr>
-              <tr>
-              <td>December 14</td>
-              <td>Friday</td>
-              <td>Exams for Friday only classes</td>
-              </tr>
-              <tr>
-              <td>December 15</td>
-              <td>Saturday</td>
-              <td>Exams for Saturday only classes</td>
-              </tr>
-              <tr>
-              <td>December 16</td>
-              <td>Sunday</td>
-              <td>Exams for Sunday only classes</td>
-              </tr>
-              <tr>
-              <td>December 17</td>
-              <td>Monday</td>
-              <td>Exams for Monday/Wednesday classes and for Monday only classes</td>
-              </tr>
-              <tr>
-              <td>December 18</td>
-              <td>Tuesday</td>
-              <td>Exams for Tuesday/Thursday classes and for Tuesday only
-                  Math Department Departmental Exams during Club Hour</td>
-              </tr>
-              <tr>
-              <td>December 19</td>
-              <td>Wednesday</td>
-              <td>Exams for Monday/Wednesday classes and for Wednesday only classes</td>
-              </tr>
-              <tr>
-              <td>December 20</td>
-              <td>Thursday</td>
-              <td>Exams for Tuesday/Thursday classes and Thursday only classes</td>
-              </tr>
-              <tr>
-              <td>December 21</td>
-              <td>Friday</td>
-              <td>Departmental Exams - Chemistry</td>
-              </tr>
-              <tr>
-              <td>December 24-25</td>
-              <td>Monday-Tuesday</td>
-              <td>College is closed.</td>
-              </tr>
-              <tr>
-              <td>December 31</td>
-              <td>Monday</td>
-              <td>College is closed.</td>
-              </tr>
-              <tr>
-              <td>January 1, 2019</td>
-              <td>Tuesday</td>
-              <td>College is closed.</td>
-              </tr>
-          </table>  -->
+          
         </div>
     </div>
 
-    <!-- <button id="btn">show profile</button>
-      <nav id="profile"style="background-color:white;color:black;"> -->
+    
        
       </nav>
-      <div id="weather"></div>
-    <!-- <div id="date" style="background-color:white;color:black;">here is date</div> -->
+  
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
