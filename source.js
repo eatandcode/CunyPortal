@@ -1,28 +1,24 @@
-// //var name=prompt("enter your name","name");
-var date=new Date;
-var weather=require('weather-js');
-// var btn = document.querySelector('#btn');
-// var profile = document.querySelector('#profile');
-// btn.addEventListener('click', function(event){
-//     if (profile.style.display == "") {
-//          profile.style.display = "none";
-//         btn.innerHTML = "SHOW PROFILE";
-//      document.getElementById("profile").innerHTML=date;
-//     }else{
-//      profile.style.display="";
-//      btn.innerHTML="HIDE PROFILE";
-//     }
-document.getElementById('weather').innerHTML=weather;
-document.addEvenListenergetElementById('date').innerHTML=date;
-/////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
+$(document).ready(function () {
 
-    //  "hello " + name + ". today is "+date+". the weather is "
-    // +weather;
-    // }
-    // else{
-    //     profile.style.display="";
-    //     btn.innerHTML="Hide Profile";
-    // }
-// }
-// );
+    $("#sidebar").mCustomScrollbar({
+         theme: "minimal"
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        // open or close navbar
+        $('#sidebar').toggleClass('active');
+        // close dropdowns
+        $('.collapse.in').toggleClass('in');
+        // and also adjust aria-expanded attributes we use for the open/closed arrows
+        // in our CSS
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+
+});
+$('button').toggle(
+    function(){
+        $('#B').css('left','0')
+    }, function(){
+        $('#B').css('left','200px')
+    }
+)
