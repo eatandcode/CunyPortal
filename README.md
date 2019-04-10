@@ -1,5 +1,4 @@
 # CunyPortal
-a simple portal for blackboard and cuny first.
 
 https://nickcancode.github.io/CunyPortal/
 
